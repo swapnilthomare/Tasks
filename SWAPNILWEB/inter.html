@@ -1,0 +1,88 @@
+<html>
+<head>
+<script>
+function lw()
+{
+//alert("called");
+document.getElementById("d2").innerHTML = document.getElementById("textArea").value;
+
+}
+
+</script>
+
+<style>
+
+
+body{
+
+background: aqua;
+
+}
+
+p{
+
+display: block;
+border: 1px solid grey;
+width: 10%;
+background:greenyellow;
+box-shadow: 15px 15px 15px grey;
+}
+
+#d1 {
+
+border: 1px solid grey;
+margin-right: 50%;
+width: 50%;
+height: 670px;
+position: absolute;
+
+
+}
+
+#d2{
+
+background: white;
+border: 2px solid grey;
+margin-left:52%;
+position: absolute;
+width: 50%;
+height: 670px;
+
+}
+#output{
+
+position: absolute;
+display: block;
+background: aqua;
+width: 50px;
+margin-top: -40px;
+margin-left: 52%;
+box-shadow: 15px 15px 15px grey;
+
+}
+
+</style>
+</head>
+<body>
+
+<p> Enter Text on the below  Window: </p>
+
+
+<div id="output"> Output: </div>
+<div id="d1"> 
+            <textarea id="textArea" onkeyup="lw()" cols="102" rows="44" style="background-color:grey;">
+
+	     </textarea>
+</div>
+
+
+
+ 
+<div id="d2"> </div> 
+
+
+</body>
+
+
+</html>
+Footer
